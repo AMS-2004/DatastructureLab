@@ -26,7 +26,7 @@ else {
  }
  temp->link=newnode;
  }
- printf("n %d ELEMENT INSERTED SUCCESSFULLY\n",newnode->data);
+ printf("\n %d ELEMENT INSERTED SUCCESSFULLY\n",newnode->data);
 }
 
 void dequeue()
@@ -44,7 +44,7 @@ free(temp);
   void display()
   {
 struct node*temp=head;
-if(head=NULL){
+if(head==NULL){
 printf("\n NO ELEMENTS");
 return;
 }
@@ -57,7 +57,7 @@ void search()
 {
 struct node*temp=head;
 int key,pos=1,found=0;
-if(head=NULL){
+if(head==NULL){
 printf("\n QUEUE EMPTY\n");
 return;
 }
@@ -103,4 +103,3 @@ while(choice!=5);
 
 }      
            
-
